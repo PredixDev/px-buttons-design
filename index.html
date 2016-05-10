@@ -1,1 +1,107 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><title>Buttons</title><link rel=stylesheet href=css/style.css></head><body><section class=viewport role=region><h1>Buttons</h1><div class="flex flex--justify flex--wrap flex--baseline"><p>To use this module, follow the instructions in the <a href=https://github.com/PredixDev/px-buttons-design>README</a>. (For background on PXd, read the <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a> documentation.)</p><a class="btn btn--primary" href=https://github.com/PredixDev/px-buttons-design><i class="fa fa-github u-mr--"></i> px-buttons-design</a></div><h2>How to Use</h2><p>Install via command line:</p><figure class="code u-mb+"><code>bower install --save https://github.com/PredixDev/px-buttons-design.git</code></figure><p>Add to component Sass file:</p><figure class="code u-mb++"><code>@import "px-buttons-design/_objects.buttons.scss";</code></figure><h2>Small</h2><h3>Sass Flag</h3><figure class=code><code>$inuit-enable-btn--small : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h3>HTML</h3><figure class="code u-mb+"><code>&lt;button class="btn btn--small btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small btn--disabled"&gt;&hellip;&lt;/button&gt;</code></figure><div class="flex flex--wrap"><button class="btn btn--small btn--primary" type=button>Primary</button> <button class="btn btn--small" type=button>Default</button> <button class="btn btn--small btn--tertiary" type=button>Tertiary</button> <button class="btn btn--small btn--disabled" disabled type=button>Disabled</button></div><p class=u-mb++>Note: Icon buttons should not be used at the small button size.</p><h2>Regular</h2><h3>Sass Flags</h3><p>To enable Primary, Tertiary, Disabled, or Icon buttons, the following Sass flags are required:</p><h4>Primary</h4><figure class=code><code>$inuit-enable-btn--primary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h4>Tertiary</h4><figure class=code><code>$inuit-enable-btn--tertiary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h4>Disabled</h4><figure class=code><code>$inuit-enable-btn--primary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h4>Icon</h4><figure class=code><code>$inuit-enable-btn--icon : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><figure class="code u-mv+"><code>&lt;button class="btn btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure><div class="flex flex--wrap u-mb+"><button class="btn btn--primary u-mb+" type=button>Primary</button> <button class="btn u-mb+" type=button>Default</button> <button class="btn btn--tertiary u-mb+" type=button>Tertiary</button> <button class="btn btn--disabled u-mb+" disabled type=button>Disabled</button> <button class="btn btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button> <button class="btn btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button> <button class="btn btn--disabled btn--icon u-mb+" disabled type=button><i class="fa fa-area-chart"></i></button></div><h2>Large</h2><h3>Sass Flag</h3><figure class=code><code>$inuit-enable-btn--large : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h3>HTML</h3><figure class="code u-mb+"><code>&lt;button class="btn btn--large btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--large btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure><div class="flex flex--wrap u-mb+"><button class="btn btn--large btn--primary u-mb+" type=button>Primary</button> <button class="btn btn--large u-mb+" type=button>Default</button> <button class="btn btn--large btn--tertiary u-mb+" type=button>Tertiary</button> <button class="btn btn--large btn--disabled u-mb+" disabled type=button>Disabled</button> <button class="btn btn--large btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button> <button class="btn btn--large btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button> <button class="btn btn--large btn--disabled btn--icon u-mb+" disabled type=button><i class="fa fa-area-chart"></i></button></div><h2>Huge</h2><h3>Sass Flag</h3><figure class=code><code>$inuit-enable-btn--huge : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h3>HTML</h3><figure class="code u-mb+"><code>&lt;button class="btn btn--huge btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure><div class="flex flex--wrap u-mb+"><button class="btn btn--huge btn--primary u-mb+" type=button>Primary</button> <button class="btn btn--huge u-mb+" type=button>Default</button> <button class="btn btn--huge btn--tertiary u-mb+" type=button>Tertiary</button> <button class="btn btn--huge btn--disabled u-mb+" disabled type=button>Disabled</button> <button class="btn btn--huge btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button> <button class="btn btn--huge btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button> <button class="btn btn--huge btn--disabled btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button></div><h2>Button with Text &#38; Icon</h2><figure class="code u-mb+"><code>&lt;button class=btn&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip; mr--"&gt;&lt;/i&gt;<br>&nbsp;&nbsp;&hellip;<br>&lt;/button&gt;</code></figure><div class=u-mb++><button class=btn type=button><i class="fa fa-gear u-mr--"></i> Cancel</button></div><h2>Icon as Button</h2><h3>Sass Flag</h3><figure class=code><code>$inuit-enable-btn--bare : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small><h3>HTML</h3><figure class="code u-mb+"><code>&lt;button class="btn btn--bare"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure><div class=u-mb+><button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-gear"></i></button> <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-refresh"></i></button> <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-arrows"></i></button> <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-external-link"></i></button></div></section></body></html>
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=utf-8>
+    <title>Buttons</title>
+    <link rel=stylesheet href=css/style.css>
+</head>
+
+<body>
+    <section class=viewport role=region>
+        <h1>Buttons</h1>
+        <div class="flex flex--justify flex--wrap flex--baseline">
+            <p>To use this module, follow the instructions in the <a href=https://github.com/PredixDev/px-buttons-design>README</a>. (For background on PXd, read the <a href=https://github.com/PredixDev/px-getting-started>Getting Started</a> documentation.)</p>
+            <a
+                class="btn btn--primary" href=https://github.com/PredixDev/px-buttons-design><i class="fa fa-github u-mr--"></i> px-buttons-design</a>
+        </div>
+        <h2>How to Use</h2>
+        <p>Install via command line:</p>
+        <figure class="code u-mb+"><code>bower install --save px-buttons-design</code></figure>
+        <p>Add to component Sass file:</p>
+        <figure class="code u-mb++"><code>@import "px-buttons-design/_objects.buttons.scss";</code></figure>
+        <h2>Small</h2>
+        <h3>Sass Flag</h3>
+        <figure class=code><code>$inuit-enable-btn--small : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+        <h3>HTML</h3>
+        <figure class="code u-mb+"><code>&lt;button class="btn btn--small btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--small btn--disabled"&gt;&hellip;&lt;/button&gt;</code></figure>
+        <div
+            class="flex flex--wrap">
+            <button class="btn btn--small btn--primary" type=button>Primary</button>
+            <button class="btn btn--small" type=button>Default</button>
+            <button class="btn btn--small btn--tertiary" type=button>Tertiary</button>
+            <button class="btn btn--small btn--disabled" disabled type=button>Disabled</button>
+            </div>
+            <p class=u-mb++>Note: Icon buttons should not be used at the small button size.</p>
+            <h2>Regular</h2>
+            <h3>Sass Flags</h3>
+            <p>To enable Primary, Tertiary, Disabled, or Icon buttons, the following Sass flags are required:</p>
+            <h4>Primary</h4>
+            <figure class=code><code>$inuit-enable-btn--primary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+            <h4>Tertiary</h4>
+            <figure class=code><code>$inuit-enable-btn--tertiary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+            <h4>Disabled</h4>
+            <figure class=code><code>$inuit-enable-btn--primary : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+            <h4>Icon</h4>
+            <figure class=code><code>$inuit-enable-btn--icon : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+            <figure class="code u-mv+"><code>&lt;button class="btn btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure>
+            <div
+                class="flex flex--wrap u-mb+">
+                <button class="btn btn--primary u-mb+" type=button>Primary</button>
+                <button class="btn u-mb+" type=button>Default</button>
+                <button class="btn btn--tertiary u-mb+" type=button>Tertiary</button>
+                <button class="btn btn--disabled u-mb+" disabled type=button>Disabled</button>
+                <button class="btn btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button>
+                <button class="btn btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button>
+                <button class="btn btn--disabled btn--icon u-mb+" disabled type=button><i class="fa fa-area-chart"></i></button>
+                </div>
+                <h2>Large</h2>
+                <h3>Sass Flag</h3>
+                <figure class=code><code>$inuit-enable-btn--large : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+                <h3>HTML</h3>
+                <figure class="code u-mb+"><code>&lt;button class="btn btn--large btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--large btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--large btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure>
+                <div
+                    class="flex flex--wrap u-mb+">
+                    <button class="btn btn--large btn--primary u-mb+" type=button>Primary</button>
+                    <button class="btn btn--large u-mb+" type=button>Default</button>
+                    <button class="btn btn--large btn--tertiary u-mb+" type=button>Tertiary</button>
+                    <button class="btn btn--large btn--disabled u-mb+" disabled type=button>Disabled</button>
+                    <button class="btn btn--large btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button>
+                    <button class="btn btn--large btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button>
+                    <button class="btn btn--large btn--disabled btn--icon u-mb+" disabled type=button><i class="fa fa-area-chart"></i></button>
+                    </div>
+                    <h2>Huge</h2>
+                    <h3>Sass Flag</h3>
+                    <figure class=code><code>$inuit-enable-btn--huge : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+                    <h3>HTML</h3>
+                    <figure class="code u-mb+"><code>&lt;button class="btn btn--huge btn--primary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--disabled"&gt;&hellip;&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--tertiary btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;<br>&lt;button class="btn btn--huge btn--disabled btn--icon"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure>
+                    <div
+                        class="flex flex--wrap u-mb+">
+                        <button class="btn btn--huge btn--primary u-mb+" type=button>Primary</button>
+                        <button class="btn btn--huge u-mb+" type=button>Default</button>
+                        <button class="btn btn--huge btn--tertiary u-mb+" type=button>Tertiary</button>
+                        <button class="btn btn--huge btn--disabled u-mb+" disabled type=button>Disabled</button>
+                        <button class="btn btn--huge btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-angle-down"></i></button>
+                        <button class="btn btn--huge btn--tertiary btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button>
+                        <button class="btn btn--huge btn--disabled btn--icon u-mb+" type=button><i class="fa fa-area-chart"></i></button>
+                        </div>
+                        <h2>Button with Text &#38; Icon</h2>
+                        <figure class="code u-mb+"><code>&lt;button class=btn&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip; mr--"&gt;&lt;/i&gt;<br>&nbsp;&nbsp;&hellip;<br>&lt;/button&gt;</code></figure>
+                        <div class=u-mb++>
+                            <button class=btn type=button><i class="fa fa-gear u-mr--"></i> Cancel</button>
+                        </div>
+                        <h2>Icon as Button</h2>
+                        <h3>Sass Flag</h3>
+                        <figure class=code><code>$inuit-enable-btn--bare : true;</code></figure><small>Flag must be set before <code class="code code--inline">@import</code> in component Sass file.</small>
+                        <h3>HTML</h3>
+                        <figure class="code u-mb+"><code>&lt;button class="btn btn--bare"&gt;<br>&nbsp;&nbsp;&lt;i class="fa fa-&hellip;"&gt;&lt;/i&gt;<br>&lt;/button&gt;</code></figure>
+                        <div class=u-mb+>
+                            <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-gear"></i></button>
+                            <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-refresh"></i></button>
+                            <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-arrows"></i></button>
+                            <button class="btn btn--bare u-mr u-mb+" type=button><i class="fa fa-external-link"></i></button>
+                        </div>
+    </section>
+</body>
+
+</html>
