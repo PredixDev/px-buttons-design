@@ -37,6 +37,7 @@ These flags are available and, if needed, should be set to `true` prior to impor
     $inuit-enable-btn--tertiary
     $inuit-enable-btn--disabled
     $inuit-enable-btn--bare
+    $inuit-enable-btn--bare--primary
     $inuit-enable-btn--icon
 
 The following variables are available for use in the module:
@@ -71,5 +72,6 @@ These classes are available if the variable flags listed above are set to `true`
 * `btn--[primary|tertiary|disabled]`: Primary, tertiary, or disabled buttons
 * `btn--full`: Full width buttons
 * `btn--icon`: Circular button for icons
+* `btn--bare[--primary]`: Icon as button
 
 view the full API [here](http://predixdev.github.io/px-buttons-design/)
