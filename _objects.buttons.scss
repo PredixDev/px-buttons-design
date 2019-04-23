@@ -81,13 +81,13 @@ $inuit-btn-border                                  : 1px solid !default;
 /// @group px-buttons-design:variables:style
 /// @type Color | String [default]
 /// @todo --px-btn-shadow
-$inuit-btn-shadow                                   : var(--px-btn-shadow, none);
+$inuit-btn-shadow                                   : var(--px-btn-shadow, none) !default;
 
 /// Small shadow
 /// @group px-buttons-design:variables:style
 /// @type Color | String [default]
 /// @todo --px-btn-shadow--light
-$inuit-btn-shadow--light                            : var(--px-btn-shadow--light, none);
+$inuit-btn-shadow--light                            : var(--px-btn-shadow--light, none) !default;
 
 /// Button height
 /// @group px-buttons-design:variables:style
